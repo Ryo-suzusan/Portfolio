@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico">
+	<title>Portfolio | Ryo Ota</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="bg-img">
+
+    <!-- BGM -->
+    <audio id="bgm" src="bgm2.wav" loop></audio>
+
+    <!-- Character -->
+    <div class="l-character">
+      <div class="l-chara-img chara-img"></div>
+    </div>
+
+    <!-- Header Menu -->
+    <header class="l-header">
+      <a class="header-icon" href="#top">
+        <img class="l-header-icon-img pixel" src="images\fanmeru_lw_0.png" alt="">
+      </a>
+      <ul class="l-nav-wrapper">
+        <li class="l-nav-li"><a class="nav-item l-nav-item" href="#about">About</a></li>
+        <li class="l-nav-li"><a class="nav-item l-nav-item" href="#works">Works</a></li>
+        <li class="l-nav-li"><a class="nav-item l-nav-item" href="#contact">Contact</a></li>
+        <li class="l-nav-li"><button class="audio on"><img class="l-mute-img pixel" src="images/audio_on.png" alt=""></button></li>
+        <li class="l-nav-li"><button class="audio off"><img class="l-mute-img pixel" src="images/audio_off.png" alt=""></button></li>
+      </ul>
+    </header>
+
+    <!-- Title -->
+    <div class="l-container" id="top">
+      <div class="l-title-wrapper">
+        <img class="l-title title pixel" src="./images/title.png" alt="触ってわかる!!おりがみチェス">
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="l-container" id="about">
+      <h1 class="subject">About</h1>
+      <hr>
+      <button class="profile l-profile js-open-modal" data-modal="profile">
+        <img class="l-profile-img" src="images/profile_button.png" alt="">
+      </button>
+    
+      <!-- Modal Window -->
+      <section id="profile" class="modal-area l-modal-area">
+        <div class="modal-bg l-modal-bg js-close-modal"></div>
+        <div class="modal-wrapper l-modal-wrapper">
+          <div class="l-modal-item">
+            <img class="l-modal-item-panel" src="images/modal_window_0.png" alt="">
+            <div class="l-modal-item-content">
+              <img class="l-modal-item-content-img" src="images/me.png" alt="">
+              <h1 class="l-modal-item-content-txt">Ryo Ota</h1>
+              <p class="l-modal-item-content-txt js-lang-ch" lang="ja">「情報工学の力で、人々に魔法を届ける」</p>
+              <p class="l-modal-item-content-txt js-lang-ch" lang="ja">中央大学理工学部情報工学科。</p>
+              <p class="l-modal-item-content-txt js-lang-ch" lang="ja">幼い頃からファンタジーな世界に憧れを抱き、自身のこだわりを形にするプログラミングに日々勤しんでいる。</p>
+              <p class="l-modal-item-content-txt js-lang-ch" lang="ja">「ユーザー体験」を磨き込むべく、「AI」「形状処理」といった幅広い技術知識を用いて、柔軟かつ効率的な実装を行うのが強み。</p>
+              <p class="l-modal-item-content-txt js-lang-ch" lang="en">“Bringing magic to people through the power of information engineering”</p>
+              <p class="l-modal-item-content-txt js-lang-ch" lang="en">Department of Information Engineering, Faculty of Science and Engineering, Chuo University.</p>
+              <p class="l-modal-item-content-txt js-lang-ch" lang="en">Having been fascinated by fantasy worlds since childhood, I devote myself daily to programming, bringing my unique vision to life.</p>
+              <p class="l-modal-item-content-txt js-lang-ch" lang="en">My strength lies in leveraging a broad range of technical knowledge to implement solutions efficiently, with a focus on refining the “user experience.”</p>
+            </div>
+          </div>
+          <div class="js-close-modal close-modal-icon l-close-modal-icon">
+            ×
+          </div>
+          <div class="js-translate translate-icon l-up-left">
+            <button class="js-en-set js-lang-ch translate-btn l-translate-btn" lang="ja">EN</button>
+            <button class="js-ja-set js-lang-ch translate-btn l-translate-btn" lang="en">JP</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Works -->
+    <div class="l-container" id="works">
+      <h1 class="subject">Works</h1>
+      <hr>
+      <ul class="l-works-wrapper">
+        <!-- Work10 -->
+        <li class="l-works-li">
+          <button class="works-item js-open-modal" data-modal="work10">
+            <img class="l-works-item-panel pixel" src="images/work_button.png" alt="">
+            <div class="l-works-item-content">
+              <img class="l-works-item-content-img render-auto" src="images/portfolio_site.png" alt="">
+              <div class="work-title">Ryo Ota's Portfolio Site</div>
+            </div>
+            <div class="works-item-year l-works-item-year">
+              Apr. 2026
+            </div>
+          </button>
+        
+          <!-- Modal Window -->
+          <section id="work10" class="modal-area l-modal-area">
+            <div class="modal-bg l-modal-bg js-close-modal"></div>
+            <div class="modal-wrapper l-modal-wrapper">
+              <div class="l-modal-item">
+                <img class="l-modal-item-panel" src="images/modal_window_0.png" alt="">
+                <div class="l-modal-item-content">
+                  <img class="l-modal-item-content-img render-auto" src="images/portfolio_site.png" alt="">
+                  <h1 class="l-modal-item-content-txt">Ryo Ota's Portfolio Site</h1>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">このWebサイト。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">これまでのモノづくりを棚卸するために制作。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">単なる作品一覧ではなく、ゲームライクなUIや遊びを取り入れ、私の世界観を表現した。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">制作人数：1人<br>担当箇所：コーディング, デザイン, 音楽<br>言語：HTML, CSS, JavaScript</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">This website.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Created to take stock of my past creative work.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Rather than simply listing my projects, I incorporated game-like UI and interactive elements to express my personal aesthetic.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Team Size: 1 person<br>Responsibilities: Coding, Design, Music<br>Languages: HTML, CSS, JavaScript</p>
+                  <ul class="l-modal-item-content-txt l-modal-item-content-link">
+                    <li class="l-link-li"><a href="https://github.com/Ryo-suzusan/Portfolio" class="link-item l-link-item GitHub">GitHub</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="js-close-modal close-modal-icon l-close-modal-icon">
+                ×
+              </div>
+              <div class="js-translate translate-icon l-up-left">
+                <button class="js-en-set js-lang-ch translate-btn l-translate-btn" lang="ja">EN</button>
+                <button class="js-ja-set js-lang-ch translate-btn l-translate-btn" lang="en">JP</button>
+              </div>
+            </div>
+          </section>
+        </li>
+
+        <!-- Work9 -->
+        <li class="l-works-li">
+          <button class="works-item js-open-modal" data-modal="work9">
+            <img class="l-works-item-panel pixel" src="images/work_button.png" alt="">
+            <div class="l-works-item-content">
+              <img class="l-works-item-content-img render-auto" src="images/uv_to_object.png" alt="">
+              <div class="work-title">UV to Object</div>
+            </div>
+            <div class="works-item-year l-works-item-year">
+              Jan. 2025
+            </div>
+          </button>
+        
+          <!-- Modal Window -->
+          <section id="work9" class="modal-area l-modal-area">
+            <div class="modal-bg l-modal-bg js-close-modal"></div>
+            <div class="modal-wrapper l-modal-wrapper">
+              <div class="l-modal-item">
+                <img class="l-modal-item-panel" src="images/modal_window_0.png" alt="">
+                <div class="l-modal-item-content">
+                  <img class="l-modal-item-content-img render-auto" src="images/uv_to_object.png" alt="">
+                  <h1 class="l-modal-item-content-txt">UV to Object</h1>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">Blender上のアクティブオブジェクトのUVマップから、新しいメッシュオブジェクトを生成するアドオン。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">過去作品「おりがみチェス」の制作工程においてボトルネックであった、モデル手動平面展開を自動化するために開発。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">これにより作業効率が大幅に向上し、制作物の品質向上に貢献した。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">制作人数：1人<br>担当箇所：コーディング<br>ツール / 言語：Blender / Python</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">An add-on for Blender that generates new mesh objects from the UV maps of active objects.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Developed to automate the manual unwrapping of models, which was a bottleneck during the production of my previous work, “Origami Chess.”</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">This significantly improved workflow efficiency and contributed to higher production quality.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Team Size: 1 person<br>Responsibilities: Coding<br>Tools / Languages: Blender / Python</p>
+                  <ul class="l-modal-item-content-txt l-modal-item-content-link">
+                    <li class="l-link-li"><a href="https://github.com/Ryo-suzusan/UV_to_Object" class="link-item l-link-item GitHub">GitHub</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="js-close-modal close-modal-icon l-close-modal-icon">
+                ×
+              </div>
+              <div class="js-translate translate-icon l-up-left">
+                <button class="js-en-set js-lang-ch translate-btn l-translate-btn" lang="ja">EN</button>
+                <button class="js-ja-set js-lang-ch translate-btn l-translate-btn" lang="en">JP</button>
+              </div>
+            </div>
+          </section>
+        </li>
+
+        <!-- Work8 -->
+        <li class="l-works-li">
+          <button class="works-item js-open-modal" data-modal="work8">
+            <img class="l-works-item-panel pixel" src="images/work_button.png" alt="">
+            <div class="l-works-item-content">
+              <img class="l-works-item-content-img render-auto" src="images/origami_chess.png" alt="">
+              <div class="work-title">Origami Chess</div>
+            </div>
+            <div class="works-item-year l-works-item-year">
+              Jan. 2025
+            </div>
+          </button>
+        
+          <!-- Modal Window -->
+          <section id="work8" class="modal-area l-modal-area">
+            <div class="modal-bg l-modal-bg js-close-modal"></div>
+            <div class="modal-wrapper l-modal-wrapper">
+              <div class="l-modal-item">
+                <img class="l-modal-item-panel" src="images/modal_window_0.png" alt="">
+                <div class="l-modal-item-content">
+                  <img class="l-modal-item-content-img render-auto" src="images/origami_chess.png" alt="">
+                  <h1 class="l-modal-item-content-txt">Origami Chess</h1>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">ペーパークラフト型ブラインドチェス。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">大学の授業「画像・映像コンテンツ演習3」にて制作。<br>従来の視覚障がい者向けチェスが高価で認知負荷が高いという課題を解決することを目標に制作した。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">触覚のみで判別可能な独自形状、組み立てやすさを追求した。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">制作人数：4人<br>担当箇所：モデリング, 紹介用Webサイト制作<br>ツール / 言語：Blender / Python, HTML, CSS</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">A paper craft version of blind chess.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">This project was developed with the goal of addressing the issues associated with traditional chess sets for the visually impaired, which are often expensive and place a high cognitive burden on users.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">We focused on usability, including unique shapes that can be distinguished solely by touch and ease of assembly.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Team Size: 4 people<br>Responsibilities: Modeling, Creation of promotional website<br>Tools / Languages: Blender / Python, HTML, CSS</p>
+                  <ul class="l-modal-item-content-txt l-modal-item-content-link">
+                    <li class="l-link-li"><a href="https://github.com/M-Gucci/2025AW_Gaei03" class="link-item l-link-item GitHub">GitHub</a></li>
+                    <li class="l-link-li"><a href="https://ryo-suzusan.github.io/OrigamiChess/" class="link-item l-link-item Website">Website</a></li>
+                    <li class="l-link-li"><a href="https://drive.google.com/file/d/1AcBWnW3eQNZrdm7DOjXtOB96zmHrn8EO/view" class="link-item l-link-item Poster">Poster</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="js-close-modal close-modal-icon l-close-modal-icon">
+                ×
+              </div>
+              <div class="js-translate translate-icon l-up-left">
+                <button class="js-en-set js-lang-ch translate-btn l-translate-btn" lang="ja">EN</button>
+                <button class="js-ja-set js-lang-ch translate-btn l-translate-btn" lang="en">JP</button>
+              </div>
+            </div>
+          </section>
+        </li>
+
+        <!-- Work7 -->
+        <li class="l-works-li">
+          <button class="works-item js-open-modal" data-modal="work7">
+            <img class="l-works-item-panel pixel" src="images/work_button.png" alt="">
+            <div class="l-works-item-content">
+              <img class="l-works-item-content-img render-auto" src="images/t_and_j.jpg" alt="">
+              <div class="work-title">T and J -The CHASE Simulation-</div>
+            </div>
+            <div class="works-item-year l-works-item-year">
+              Jul. 2025
+            </div>
+          </button>
+        
+          <!-- Modal Window -->
+          <section id="work7" class="modal-area l-modal-area">
+            <div class="modal-bg l-modal-bg js-close-modal"></div>
+            <div class="modal-wrapper l-modal-wrapper">
+              <div class="l-modal-item">
+                <img class="l-modal-item-panel" src="images/modal_window_0.png" alt="">
+                <div class="l-modal-item-content">
+                  <img class="l-modal-item-content-img render-auto" src="images/t_and_j.jpg" alt="">
+                  <h1 class="l-modal-item-content-txt">T and J -The CHASE Simulation-</h1>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">追跡AIを備えたネコと、逃走AIを備えたネズミによる追いかけっこ再現コンテンツ。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">大学の授業「画像・映像コンテンツ演習2」にて制作。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">マップには、シード値によるランダム生成機能を実装したことで、毎回異なる環境でプレイ可能にした。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">制作人数：4人<br>担当箇所：モデリング、マップ生成、UI<br>ツール / 言語：Unity, Blender / C#</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">A simulation of a cat-and-mouse chase featuring a cat with a pursuit AI and a mouse with an escape AI.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Created for the university course “Image and Video Content Seminar 2.”</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">By implementing a random generation feature based on seed values for the map, we enabled gameplay in a different environment every time.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Team Size: 4 people<br>Responsibilities: Modeling, Map Generation, UI<br>Tools / Languages: Unity, Blender / C#</p>
+                  <ul class="l-modal-item-content-txt l-modal-item-content-link">
+                    <li class="l-link-li"><a href="https://github.com/GitHubharuya/gaei2_kiborin" class="link-item l-link-item GitHub">GitHub</a></li>
+                    <li class="l-link-li"><a href="https://youtu.be/mHhD9u7P0q4" class="link-item l-link-item YouTube">YouTube</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="js-close-modal close-modal-icon l-close-modal-icon">
+                ×
+              </div>
+              <div class="js-translate translate-icon l-up-left">
+                <button class="js-en-set js-lang-ch translate-btn l-translate-btn" lang="ja">EN</button>
+                <button class="js-ja-set js-lang-ch translate-btn l-translate-btn" lang="en">JP</button>
+              </div>
+            </div>
+          </section>
+        </li>
+
+        <!-- Work6 -->
+        <li class="l-works-li">
+          <button class="works-item js-open-modal" data-modal="work6">
+            <img class="l-works-item-panel pixel" src="images/work_button.png" alt="">
+            <div class="l-works-item-content">
+              <img class="l-works-item-content-img render-auto" src="images/batancube.jpg" alt="">
+              <div class="work-title">BatanCube</div>
+            </div>
+            <div class="works-item-year l-works-item-year">
+              Jun. 2025
+            </div>
+          </button>
+        
+          <!-- Modal Window -->
+          <section id="work6" class="modal-area l-modal-area">
+            <div class="modal-bg l-modal-bg js-close-modal"></div>
+            <div class="modal-wrapper l-modal-wrapper">
+              <div class="l-modal-item">
+                <img class="l-modal-item-panel" src="images/modal_window_0.png" alt="">
+                <div class="l-modal-item-content">
+                  <img class="l-modal-item-content-img render-auto" src="images/batancube.jpg" alt="">
+                  <h1 class="l-modal-item-content-txt">BatanCube</h1>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">マス目状のフィールドで、立方体の自機を転がしながら操作し、敵を倒すアクションゲーム。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">Track JobのBeginner's Game Jamにて制作。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">フィールド情報を一元管理するクラス設計や、継承を用いた武器アイテム実装に力を入れた。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">制作人数：3人<br>担当箇所：フィールド管理、敵AI、武器システム<br>ツール / 言語：Unreal Engine 5 / C++, Blueprint</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">An action game where you control a cube-shaped player character by rolling it across a grid-like field to defeat enemies.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Created for Track Job’s Beginner’s Game Jam.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">I focused on class design for centralized field management and implementing weapon items using inheritance.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Team Size: 3 people<br>Responsibilities: Field Management, Enemy AI, Weapon System<br>Tools / Languages: Unreal Engine 5 / C++, Blueprint</p>
+                  <ul class="l-modal-item-content-txt l-modal-item-content-link">
+                    <li class="l-link-li"><a href="https://github.com/Ryo-suzusan/BatanCube" class="link-item l-link-item GitHub">GitHub</a></li>
+                    <li class="l-link-li"><a href="https://youtu.be/MS9tPb7pO-g" class="link-item l-link-item YouTube">YouTube</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="js-close-modal close-modal-icon l-close-modal-icon">
+                ×
+              </div>
+              <div class="js-translate translate-icon l-up-left">
+                <button class="js-en-set js-lang-ch translate-btn l-translate-btn" lang="ja">EN</button>
+                <button class="js-ja-set js-lang-ch translate-btn l-translate-btn" lang="en">JP</button>
+              </div>
+            </div>
+          </section>
+        </li>
+
+        <!-- Work5 -->
+        <li class="l-works-li">
+          <button class="works-item js-open-modal" data-modal="work5">
+            <img class="l-works-item-panel pixel" src="images/work_button.png" alt="">
+            <div class="l-works-item-content">
+              <img class="l-works-item-content-img render-auto" src="images/armadiroll.jpg" alt="">
+              <div class="work-title">Armadiroll</div>
+            </div>
+            <div class="works-item-year l-works-item-year">
+              Jun. 2025
+            </div>
+          </button>
+        
+          <!-- Modal Window -->
+          <section id="work5" class="modal-area l-modal-area">
+            <div class="modal-bg l-modal-bg js-close-modal"></div>
+            <div class="modal-wrapper l-modal-wrapper">
+              <div class="l-modal-item">
+                <img class="l-modal-item-panel" src="images/modal_window_0.png" alt="">
+                <div class="l-modal-item-content">
+                  <img class="l-modal-item-content-img render-auto" src="images/armadiroll.jpg" alt="">
+                  <h1 class="l-modal-item-content-txt">Armadiroll</h1>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">主人公のアルマジロを、「歩き」と「転がり」のアクションによって操作する3Dアクションゲーム。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">就活用の作品作りと、Unreal Engineの勉強も兼ねて制作を始めた。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">転がり時の効果音変化や、攻撃時のヒットストップ演出など、手触りにこだわった。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">制作人数：1人<br>担当箇所：モデリング、プログラミング全般<br>ツール / 言語：Unreal Engine 5, Blender / Blueprint</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">A 3D action game where you control the protagonist, an armadillo, using “walking” and “rolling” actions.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">I began developing this project to create a portfolio for job hunting and to study Unreal Engine.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">I paid close attention to the game's feel, including changes in sound effects when rolling and hit-stop animations during attacks.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Team Size: 1 person<br>Responsibilities: Modeling, General Programming<br>Tools / Languages: Unreal Engine 5, Blender / Blueprint</p>
+                  <ul class="l-modal-item-content-txt l-modal-item-content-link">
+                    <li class="l-link-li"><a href="https://youtu.be/XQSRxqO7j8k" class="link-item l-link-item YouTube">YouTube</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="js-close-modal close-modal-icon l-close-modal-icon">
+                ×
+              </div>
+              <div class="js-translate translate-icon l-up-left">
+                <button class="js-en-set js-lang-ch translate-btn l-translate-btn" lang="ja">EN</button>
+                <button class="js-ja-set js-lang-ch translate-btn l-translate-btn" lang="en">JP</button>
+              </div>
+            </div>
+          </section>
+        </li>
+
+        <!-- Work4 -->
+        <li class="l-works-li">
+          <button class="works-item js-open-modal" data-modal="work4">
+            <img class="l-works-item-panel pixel" src="images/work_button.png" alt="">
+            <div class="l-works-item-content">
+              <img class="l-works-item-content-img render-auto" src="images/my_pet.jpg" alt="">
+              <div class="work-title">Raise! Achieve! My Pet</div>
+            </div>
+            <div class="works-item-year l-works-item-year">
+              May. 2025
+            </div>
+          </button>
+        
+          <!-- Modal Window -->
+          <section id="work4" class="modal-area l-modal-area">
+            <div class="modal-bg l-modal-bg js-close-modal"></div>
+            <div class="modal-wrapper l-modal-wrapper">
+              <div class="l-modal-item">
+                <img class="l-modal-item-panel" src="images/modal_window_0.png" alt="">
+                <div class="l-modal-item-content">
+                  <img class="l-modal-item-content-img render-auto" src="images/my_pet.jpg" alt="">
+                  <h1 class="l-modal-item-content-txt">Raise! Achieve! My Pet</h1>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">育成ゲームの要素を取り入れた、タスク管理Webアプリ。<br>登録したタスクを期限までに達成することで、ペットを育てることができる。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">Track JobのBeginner's Hackathonにて制作。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">開発時は率先してコード統合を担い、メンバーの進捗状況の可視化に努めた。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">制作人数：5人<br>担当箇所：メインページ制作、コード統合<br>言語：Python (Streamlit)</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">A task management web app incorporating elements of a pet-raising game.<br>By completing registered tasks by their deadlines, you can raise a pet.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Created for the Track Job Beginner's Hackathon.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">During development, I took the lead in code integration and worked to visualize the team’s progress.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Team Size: 5 people<br>Responsibilities: Main page development, code integration<br>Language: Python (Streamlit)</p>
+                  <ul class="l-modal-item-content-txt l-modal-item-content-link">
+                    <li class="l-link-li"><a href="https://github.com/Ryo-suzusan/Hackathon_TeamC" class="link-item l-link-item GitHub">GitHub</a></li>
+                    <li class="l-link-li"><a href="https://youtu.be/nyM7moQHyBk" class="link-item l-link-item YouTube">YouTube</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="js-close-modal close-modal-icon l-close-modal-icon">
+                ×
+              </div>
+              <div class="js-translate translate-icon l-up-left">
+                <button class="js-en-set js-lang-ch translate-btn l-translate-btn" lang="ja">EN</button>
+                <button class="js-ja-set js-lang-ch translate-btn l-translate-btn" lang="en">JP</button>
+              </div>
+            </div>
+          </section>
+        </li>
+
+        <!-- Work3 -->
+        <li class="l-works-li">
+          <button class="works-item js-open-modal" data-modal="work3">
+            <img class="l-works-item-panel pixel" src="images/work_button.png" alt="">
+            <div class="l-works-item-content">
+              <img class="l-works-item-content-img render-auto" src="images/ringo_tokyo.png" alt="">
+              <div class="work-title">Apple Tokyo</div>
+            </div>
+            <div class="works-item-year l-works-item-year">
+              Jul. 2024
+            </div>
+          </button>
+        
+          <!-- Modal Window -->
+          <section id="work3" class="modal-area l-modal-area">
+            <div class="modal-bg l-modal-bg js-close-modal"></div>
+            <div class="modal-wrapper l-modal-wrapper">
+              <div class="l-modal-item">
+                <img class="l-modal-item-panel" src="images/modal_window_0.png" alt="">
+                <div class="l-modal-item-content">
+                  <img class="l-modal-item-content-img render-auto" src="images/ringo_tokyo.png" alt="">
+                  <h1 class="l-modal-item-content-txt">Apple Tokyo</h1>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">東京都の高さ座標データから、VRML上に東京都の街並みを、道路と建物を色分けして再現するバーチャルコンテンツ。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">大学の授業「画像・映像コンテンツ演習1」にて制作。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">欠損点の補完や、データ削減による3Dモデルのジャギー修正により、データ量が小さく・綺麗な街並みを再現することを目標とした。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">制作人数：4人<br>担当箇所：3Dモデル処理, 建物と道路の分類処理<br>言語：C++, Python, VRML</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Virtual content that recreates the streetscape of Tokyo in VRML using elevation data from the city, with roads and buildings color-coded.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Created for the university course “Image and Video Content Seminar 1.”</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">The goal was to recreate a clean, high-quality streetscape with minimal data volume by filling in missing points and smoothing out jagged edges in the 3D model.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Team Size: 4 people<br>Responsibilities: Modeling, classification of buildings<br>Languages: C++, Python, VRML</p>
+                  <ul class="l-modal-item-content-txt l-modal-item-content-link">
+                    <li class="l-link-li"><a href="https://github.com/GitHubharuya/gaei1-ringo" class="link-item l-link-item GitHub">GitHub</a></li>
+                    <li class="l-link-li"><a href="https://drive.google.com/file/d/1dZMDVkS_rgSF0_QBySwpz72Xt5SZUEDV/view?usp=sharing" class="link-item l-link-item Poster">Poster</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="js-close-modal close-modal-icon l-close-modal-icon">
+                ×
+              </div>
+              <div class="js-translate translate-icon l-up-left">
+                <button class="js-en-set js-lang-ch translate-btn l-translate-btn" lang="ja">EN</button>
+                <button class="js-ja-set js-lang-ch translate-btn l-translate-btn" lang="en">JP</button>
+              </div>
+            </div>
+          </section>
+        </li>
+
+        <!-- Work2 -->
+        <li class="l-works-li">
+          <button class="works-item js-open-modal" data-modal="work2">
+            <img class="l-works-item-panel pixel" src="images/work_button.png" alt="">
+            <div class="l-works-item-content">
+              <img class="l-works-item-content-img render-auto" src="images/cleanig.jpg" alt="">
+              <div class="work-title">Cleaning Punk Rhythm</div>
+            </div>
+            <div class="works-item-year l-works-item-year">
+              Jul. 2023
+            </div>
+          </button>
+        
+          <!-- Modal Window -->
+          <section id="work2" class="modal-area l-modal-area">
+            <div class="modal-bg l-modal-bg js-close-modal"></div>
+            <div class="modal-wrapper l-modal-wrapper">
+              <div class="l-modal-item">
+                <img class="l-modal-item-panel" src="images/modal_window_0.png" alt="">
+                <div class="l-modal-item-content">
+                  <img class="l-modal-item-content-img render-auto" src="images/cleanig.jpg" alt="">
+                  <h1 class="l-modal-item-content-txt">Cleaning Punk Rhythm</h1>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">フィールドである教室内で、次々飛んでくる障害物を避けながら、次々増えていく教室の汚れを音楽に合わせて掃除する、弾幕・リズムゲーム。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">中央大学のUnityサウンドゲームジャムにて制作。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">制作ではゲーム内のドット絵作成を全て担当し、可愛らしいデザインを心がけた。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">制作人数：4人<br>担当箇所：デザイン</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">A bullet-hell rhythm game set in a classroom where players must avoid obstacles flying in one after another while cleaning up the increasing dirt in the classroom in time with the music.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Created at Chuo University’s Unity Sound Game Jam.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">I was responsible for creating all the in-game pixel art and aimed for a cute design.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Team Size: 4 people<br>Responsibilities: Design</p>
+                  <ul class="l-modal-item-content-txt l-modal-item-content-link">
+                    <li class="l-link-li"><a href="https://github.com/tytoman/SoundGameJam" class="link-item l-link-item GitHub">GitHub</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="js-close-modal close-modal-icon l-close-modal-icon">
+                ×
+              </div>
+              <div class="js-translate translate-icon l-up-left">
+                <button class="js-en-set js-lang-ch translate-btn l-translate-btn" lang="ja">EN</button>
+                <button class="js-ja-set js-lang-ch translate-btn l-translate-btn" lang="en">JP</button>
+              </div>
+            </div>
+          </section>
+        </li>
+
+        <!-- Work1 -->
+        <li class="l-works-li">
+          <button class="works-item js-open-modal" data-modal="work1">
+            <img class="l-works-item-panel pixel" src="images/work_button.png" alt="">
+            <div class="l-works-item-content">
+              <img class="l-works-item-content-img render-auto" src="images/youtube.jpg" alt="">
+              <div class="work-title">YouTube Video Uploads</div>
+            </div>
+            <div class="works-item-year l-works-item-year">
+              2020
+            </div>
+          </button>
+        
+          <!-- Modal Window -->
+          <section id="work1" class="modal-area l-modal-area">
+            <div class="modal-bg l-modal-bg js-close-modal"></div>
+            <div class="modal-wrapper l-modal-wrapper">
+              <div class="l-modal-item">
+                <img class="l-modal-item-panel" src="images/modal_window_0.png" alt="">
+                <div class="l-modal-item-content">
+                  <img class="l-modal-item-content-img render-auto" src="images/youtube.jpg" alt="">
+                  <h1 class="l-modal-item-content-txt">YouTube Video Uploads</h1>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">ゆっくりボイスによるゲーム実況チャンネルを運営していた。<br>Minecraftの建築実況プレイが中心。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">自らの創造を発信し、多くの人に楽しんでもらうことを目的に始め、以来5年ほど投稿を続ける。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">ファンタジーな感性を表現する建築と、見やすく面白い動画編集に力を入れていた。</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="ja">制作人数：1人<br>担当箇所：ゲームプレイ, 動画編集<br>ツール：ゆっくりムービーメーカー4</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">I ran a gameplay commentary channel.<br>The channel focused on Minecraft building gameplay.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">I started the channel with the goal of sharing my creations and entertaining as many people as possible, and have continued uploading content for about five years since then.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">I focused on creating buildings that expressed a fantasy aesthetic and on video editing that was both easy to watch and entertaining.</p>
+                  <p class="l-modal-item-content-txt js-lang-ch" lang="en">Team Size: 1 person<br>Responsibilities: Gameplay, Video Editing<br>Tools: Yukkuri Movie Maker 4</p>
+                  <ul class="l-modal-item-content-txt l-modal-item-content-link">
+                    <li class="l-link-li"><a href="https://www.youtube.com/@Suzuran_craft" class="link-item l-link-item YouTube">YouTube</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="js-close-modal close-modal-icon l-close-modal-icon">
+                ×
+              </div>
+              <div class="js-translate translate-icon l-up-left">
+                <button class="js-en-set js-lang-ch translate-btn l-translate-btn" lang="ja">EN</button>
+                <button class="js-ja-set js-lang-ch translate-btn l-translate-btn" lang="en">JP</button>
+              </div>
+            </div>
+          </section>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="l-container" id="contact">
+      <h1 class="subject">Contact</h1>
+      <hr>
+      <ul class="l-contact-wrapper">
+        <li class="l-link-li"><a href="https://github.com/Ryo-suzusan" class="link-item l-link-item GitHub">GitHub</a></li>
+        <li class="l-link-li"><a href="mailto:suzuran.ota@gmail.com" class="link-item l-link-item E-mail">E-mail</a></li>
+      </ul>
+    </div>
+
+    <!-- Footer Copylight -->
+    <footer class="l-footer">
+      <div class="l-container">
+        <div>
+          <h5>© 2026 Ryo Ota</h5>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

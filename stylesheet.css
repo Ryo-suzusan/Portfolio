@@ -1,0 +1,490 @@
+/* general */* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 6px solid white;
+  box-shadow: 4px 4px 0 rgba(56, 73, 60, 0.8);
+}
+
+img {
+  image-rendering: pixelated;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: "DotGothic16";
+}
+body.modal-open {
+  overflow: hidden;
+}
+body.bg-img {
+  background-image: url(./images/background.png);
+  background-size: 800px;
+  /* 上記imgのpixelatedだけでは背景画像まで適用されないため、以下に同じ処理を追加 */
+  image-rendering: pixelated;
+}
+
+.l-container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 55px;
+  margin: 0 auto;
+}
+
+.subject {
+  color: white;
+  text-shadow: 3px 3px 0 rgba(56, 73, 60, 0.8);
+}
+
+/* Modal Window */
+.modal-area {
+  visibility: hidden;
+  opacity : 0;
+  transition: .2s;
+}
+.l-modal-area {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-bg {
+  background-color: rgba(30,30,30,0.9);
+}
+.l-modal-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-wrapper {
+  transition: all .2s ease-out;
+}
+.l-modal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-200%);
+  width: 800px;
+  padding: 10px 30px;
+}
+
+.l-modal-item {
+  position: relative;
+  text-align: center;
+}
+
+.l-modal-item-panel {
+  padding: 0;
+  width: 100%;
+}
+
+.l-modal-item-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  transform:translate(-50%,-50%);
+}
+
+.l-modal-item-content-img {
+  width: 70%;
+}
+
+.l-modal-item-content-txt {
+  text-align: left;
+}
+
+.l-modal-item-content-link {
+  padding-top: 10px;
+}
+
+.close-modal-icon {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  background-color: rgb(140, 85, 61);
+  border: 5px solid rgb(83, 52, 39);
+}
+
+.l-close-modal-icon {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  padding: 0 7px;
+  text-align: center;
+}
+
+.l-up-left {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+
+.translate-btn {
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  transition-property: all;
+  background-color: rgb(64, 87, 190);
+  box-shadow: 0 4px 0 rgb(41, 51, 120);
+}
+.translate-btn:active {
+  transform: translate(0, 4px);
+  box-shadow: 0 0 0;
+}
+.l-translate-btn {
+  padding: 2px 12px;
+}
+
+.is-show { /* モーダル表示用クラス */
+  overflow: hidden;
+  visibility: visible;
+  opacity : 1;
+}
+
+.is-show .l-modal-wrapper {
+  transform:translate(-50%,-50%);
+}
+
+/* Header Menu */
+header {
+	background-color: rgb(218, 166, 71);
+  border-bottom: 6px solid rgb(140, 85, 61);
+  box-shadow: 0 6px 0 rgb(83, 52, 39);
+}
+.l-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	position: fixed;
+	padding: 0 10px;
+	top: 0;
+	z-index: 10;
+}
+
+.header-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition-property: all;
+}
+.header-icon:hover {
+  filter: brightness(1.1)
+}
+
+.l-header-icon-img {
+  height: 50px;
+}
+
+.l-nav-wrapper {
+  justify-content: flex-end;
+}
+
+.l-nav-li {
+  display: inline;
+}
+
+.nav-item {
+  background: rgb(140, 85, 61);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 5px 0 rgb(83, 52, 39);
+  transition-property: all;
+}
+.l-nav-item {
+  display: inline;
+  padding: 10px 20px;
+  position: relative;
+}
+.nav-item:active {
+  top: 5px;
+  box-shadow: 0 0 0;
+}
+.nav-item:hover {
+  background: rgb(157, 100, 76);
+}
+
+.audio {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.audio.on {
+  display: none;
+}
+
+.l-mute-img {
+  vertical-align: middle;
+  height: 50px;
+}
+
+/* Character */
+.l-character {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.chara-img {
+  width: 16px;
+  height: 32px;
+  background:url(./images/you_down.png) no-repeat;
+  animation: chara-walk 2s steps(4) infinite;
+}
+.l-chara-img {
+  position: absolute;
+  transform:translate(-50%,-50%) scale(5);
+}
+@keyframes chara-walk {
+  to {
+    background-position: -64px 0;
+  }
+}
+@-webkit-keyframes chara-walk {
+  to {
+    background-position: -64px 0;
+  }
+}
+@-moz-keyframes chara-walk {
+  to {
+    background-position: -64px 0;
+  }
+}
+
+/* Click Effect */
+/* ごめんけどこの中にレイアウト含まれてます許して */
+.ripple {
+  animation: ripple 0.25s ease 0s;
+  background-color: white;
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+}
+@keyframes ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.8;
+    transform: translate(0, 0);
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transform: translate(-100px, -100px);
+  }
+}
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  animation: particle 0.25s ease 0s;
+  pointer-events: none;
+}
+
+/* Title */
+.l-title-wrapper {
+  padding-top: 100px;
+  text-align: center; /* Center the content */
+}
+
+.l-title {
+  width: 90%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  animation: floating 4s ease-in-out infinite alternate-reverse;
+}
+@keyframes floating {
+  0% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
+}
+
+.title {
+  filter: drop-shadow(6px 6px 6px rgb(56, 73, 60));
+}
+
+/* About */
+.profile {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  transition-property: all;
+}
+.profile:active {
+  transform: scale(0.96);
+}
+.profile:hover {
+  filter: brightness(1.1)
+}
+
+.l-profile-img {
+  width: 260px;
+}
+
+/* Works */
+.l-works-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.l-works-li {
+  width: 45%;
+  margin-bottom: 100px;
+}
+
+.l-works-li:nth-child(even) {
+  text-align: right;
+}
+
+.works-item {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition-property: all;
+  position: relative;
+}
+.works-item:active {
+  transform: scale(0.96);
+}
+.works-item:hover {
+  filter: brightness(1.1);
+}
+
+.l-works-item-panel {
+  width: 350px;
+}
+
+.l-works-item-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+
+.l-works-item-content-img {
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+.work-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.render-auto {
+  image-rendering: auto;
+}
+
+.works-item-year {
+  background-color: rgb(37, 108, 146);
+  border-top: 4px solid rgb(92, 150, 179);
+  color: white;
+  padding: 5px 5px;
+}
+
+.l-works-item-year {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.l-link-li {
+  display: inline;
+}
+
+.link-item {
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  transition-property: all;
+}
+.l-link-item {
+  padding: 10px 15px;
+}
+.link-item:active {
+  transform: scale(0.96);
+}
+.link-item:hover {
+  filter: brightness(1.1)
+}
+
+.GitHub {
+  background: rgb(42, 47, 52);
+}
+.YouTube {
+  background: rgb(255, 0, 51);
+}
+.Website {
+  background: rgb(64, 64, 255);
+}
+.Poster {
+  background: rgb(13, 170, 13);
+}
+
+/* Contact */
+.l-contact-wrapper {
+  padding-bottom: 40px;
+}
+
+.E-mail {
+  background: rgb(242, 70, 55);
+}
+
+/* Footer Copylight */
+footer {
+	background-color: rgb(218, 166, 71);
+  border-top: 6px solid rgb(83, 52, 39);
+  box-shadow: 0 -6px 0 rgb(140, 85, 61);
+  color: black;
+}
+
+.l-footer {
+  padding: 10px 0;
+  z-index: 10;
+}
