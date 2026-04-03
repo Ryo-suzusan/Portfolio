@@ -111,6 +111,8 @@ body.bg-img {
   left: 50%;
   width: 75%;
   transform:translate(-50%,-50%);
+  overflow-y: scroll;
+  height: 500px;
 }
 
 .l-modal-item-content-img {
