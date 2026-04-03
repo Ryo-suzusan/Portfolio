@@ -413,6 +413,7 @@ header {
 .work-title {
   font-size: 18px;
   font-weight: 400;
+  color: black;
 }
 
 .render-auto {
